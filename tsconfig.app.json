@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.d.ts"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "allowJs" : true, // 추가됨
+    "maxNodeModuleJsDepth": 0,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": ["node"] // 추가됨
+  }
+}
